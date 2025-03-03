@@ -28,6 +28,14 @@
             * f(Q,K,V) = softmax(QK^T/√d_k)V
         * KV-cache
         * Some light introduction to other architectures (encoder-only, decoder-only) and rationale to how and why decoder-only is current dominant architecture
+    * Tokenizers
+        * Kaparthy's video
+        * Tiktoken, BPE, SentencePiece (older)
+        * Understanding fertility rates
+    * What are Embeddings?
+    * Gentle introduction to multimodality
+        * Pipeline approaches
+        * fusion (early, embedded)
 
 * Introduction to training large language models
     * Pretraining

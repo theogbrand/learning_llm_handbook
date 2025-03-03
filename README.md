@@ -3,19 +3,49 @@
 ## Estimated course duration: 2 months
 * Estimated time commitment: 320 hours. (8 hours per day * 5 days a week * 4 weeks per month * 2 months)
 
+## Prerequisites
+
+### Data Science Fundamentals
+* Exploratory Data Analysis (EDA)
+* K-means clustering (L1, L2 Norm)
+* Optical Character Recognition for scanning PDFs, text files
+* Using Regular Expressions (REGEX) for processing raw outputs from OCR/web scraped data
+
 ## Course Outline
-* LLM under the hood crash course by William and Leslie: [GitHub Link](https://github.com/aisingapore/learning-buildgpt2)
 
 1. Data science fundamentals refresher (optional, recommended)
+
 2. LLM fundamentals 
-* Tools
-* Data processing
+* General understanding of neural networks
+    * MNIST by hand, with and without PyTorch
+    * Introduction to language modelling 
+        * Kaparthy's n-gram makemore tutorial
+        * Understanding Backpropagation (Partial derivatives, Chain rule, autograd)
+        * Go through example by hand at least once and get the general idea of it
+    * Understanding vanilla Transformer architecture (Attention is all you need paper)
+        * Understanding transformer blocks (see illustrated transformer example)
+            * f(Q,K,V) = softmax(QK^T/√d_k)V
+        * KV-cache
+        * Some light introduction to other architectures (encoder-only, decoder-only) and rationale to how and why decoder-only is current dominant architecture
+
+* Introduction to training large language models
 * Pretraining
+    * train neural net with FineWeb, Karpathy video
 * Posttraining
     * Finetuning
-    * RL
+    * RL (probably leave out)
 * Evaluation
+    * Understanding nuance of every leaderboard
+    * Evaluation types
+    * Critique dataset curation strategies
 * Inference and deployment
+    * What is vLLM
+    * Picking and deploying a suitable GPU
+
 3. LLM applications and systems (optional, recommended)
 * Customer support RAG chatbot
 * Realtime SEA-LION
+
+
+Resources
+* LLM under the hood crash course by William and Leslie: [GitHub Link](https://github.com/aisingapore/learning-buildgpt2)

@@ -1,6 +1,6 @@
  Weekly Course Objectives (Jupyter Notebook Exercises)
 
-## Introduction
+## Introduction: Understanding Language Models
 ### Week 1: LLM Fundamentals and Development Environment Setup
 Resource Required: Google Colab (T4) GPU - free
 - **Notebook 1.1: LLM Tools and Libraries**
@@ -17,7 +17,7 @@ Resource Required: Google Colab (T4) GPU - free
   - Evaluate embeddings using MTEB benchmark tasks
   - Compare embedding performance across multiple languages
 
-## Modeling Fundamentals
+## Training and Fine-Tuning Language Models
 ### Week 2: Transformer Architecture Deep Dive
 - **Notebook 2.1: Attention Mechanism**
   - Code attention mechanism from scratch (Q, K, V matrices)
@@ -73,7 +73,7 @@ Resource Required: Google Colab (T4) GPU - free
   - Create instruction tuning datasets and training loops
   - Implement simplified RLHF pipeline components
 
-## Inference and Evaluation
+## Evaluating Language Models
 ### Week 6: Inference Optimization and Deployment
 Resource Required: Google Colab (T4) GPU - free
 - **Notebook 6.1: Inference Engines**
@@ -99,7 +99,7 @@ Resource Required: Google Colab (T4) GPU - free
   - Build lightweight evaluation pipelines for rapid testing
   - Analyze correlation between lite-eval and comprehensive benchmarks
 
-## Looking Ahead
+## The future of Language Models
 ### Week 8: Multimodality, RL, RAG Systems
 - **Notebook 8.1: Multimodal Integration**
   - Implement early and late fusion techniques

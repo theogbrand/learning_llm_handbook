@@ -10,6 +10,8 @@
 * K-means clustering (L1, L2 Norm)
 * Optical Character Recognition for scanning PDFs, text files
 * Using Regular Expressions (REGEX) for processing raw outputs from OCR/web scraped data
+* Basic classification, clustering and dimentionality reduction techniques
+
 
 ## Course Outline
 
@@ -54,6 +56,19 @@
 3. LLM applications and systems (optional, recommended)
 * Customer support RAG chatbot
 * Realtime SEA-LION
+
+# Weekly Course Objectives
+
+## Week 1: Introduction to LLMs
+- Familirize with tools and libraries
+    - Import SEA-LION using HF into Notebook, run decoding strategies. Run locally on Collab (T4 GPU) Optional: Locally using Ollama
+    - PyTorch LLM
+- Tokenizers
+    - SentencePiece, TikToken, Vocab Extension, BPE
+- Embeddings
+    - Constrastive learning (CLIP)
+    - Word2Vec
+    - MTEB. Multilingual. 
 
 
 Resources

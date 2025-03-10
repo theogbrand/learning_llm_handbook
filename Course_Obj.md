@@ -73,7 +73,6 @@ Resource Required: Google Colab (T4) GPU - free
 
 ## Week 6: Inference Optimization and Deployment
 Resource Required: Google Colab (T4) GPU - free
-- **Notebook 5.1: Full Fine-tuning**
 - **Notebook 6.1: Inference Engines**
   - Benchmark vLLM against standard HF/PyTorch inference 
   - Implement various inference optimizations
@@ -86,7 +85,6 @@ Resource Required: Google Colab (T4) GPU - free
 
 ## Week 7: Evaluation
 Resource Required: Google Colab (T4) GPU - free
-- **Notebook 5.1: Full Fine-tuning**
 - **Notebook 7.1: Benchmark Development**
   - Create custom evaluation benchmarks for specific domains
   - Implement automated evaluation for math and coding tasks

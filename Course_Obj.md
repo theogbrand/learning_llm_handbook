@@ -1,6 +1,7 @@
  Weekly Course Objectives (Jupyter Notebook Exercises)
 
-## Week 1: LLM Fundamentals and Development Environment Setup
+## Introduction
+### Week 1: LLM Fundamentals and Development Environment Setup
 Resource Required: Google Colab (T4) GPU - free
 - **Notebook 1.1: LLM Tools and Libraries**
   - Import SEA-LION using Hugging Face, implement different decoding strategies
@@ -16,7 +17,8 @@ Resource Required: Google Colab (T4) GPU - free
   - Evaluate embeddings using MTEB benchmark tasks
   - Compare embedding performance across multiple languages
 
-## Week 2: Transformer Architecture Deep Dive
+## Modeling Fundamentals
+### Week 2: Transformer Architecture Deep Dive
 - **Notebook 2.1: Attention Mechanism**
   - Code attention mechanism from scratch (Q, K, V matrices)
   - Implement scaled dot-product attention with masking
@@ -30,7 +32,7 @@ Resource Required: Google Colab (T4) GPU - free
   - Build a tiny autograd engine
   - Implement and train a simple neural network using micrograd
 
-## Week 3: Advanced Transformer Components
+### Week 3: Advanced Transformer Components
 - **Notebook 3.1: Transformer Block Implementation**
   - Code multi-head attention from scratch
   - Implement positional embeddings and encodings
@@ -43,7 +45,7 @@ Resource Required: Google Colab (T4) GPU - free
   - Compare performance of decoder-only (GPT-like) architectures
   - Experiment with encoder-decoder (T5-like) designs on translation tasks (E.g. NLLB)
 
-## Week 4: Data Pipeline Engineering
+### Week 4: Data Pipeline Engineering
 Resource Required: 8xA100 GPU to train on FineWeb (Karpathy example)
 - **Notebook 4.1: Data Pipeline Development**
   - Build data preprocessing pipelines for text datasets (OCR - give already OCR-ed data)
@@ -58,7 +60,7 @@ Resource Required: 8xA100 GPU to train on FineWeb (Karpathy example)
   - Implement masked language modeling objectives
   - Build causal language modeling training loop
 
-## Week 5: Fine-tuning and Adaptation Methods
+### Week 5: Fine-tuning and Adaptation Methods
 Resource Required: Google Colab (T4) GPU - free
 - **Notebook 5.1: Full Fine-tuning**
   - Implement full fine-tuning on domain-specific datasets
@@ -71,7 +73,8 @@ Resource Required: Google Colab (T4) GPU - free
   - Create instruction tuning datasets and training loops
   - Implement simplified RLHF pipeline components
 
-## Week 6: Inference Optimization and Deployment
+## Inference and Evaluation
+### Week 6: Inference Optimization and Deployment
 Resource Required: Google Colab (T4) GPU - free
 - **Notebook 6.1: Inference Engines**
   - Benchmark vLLM against standard HF/PyTorch inference 
@@ -83,7 +86,7 @@ Resource Required: Google Colab (T4) GPU - free
   - Implement KV-cache management strategies for production
   - Benchmark different GPU configurations and batch sizes
 
-## Week 7: Evaluation
+### Week 7: Evaluation
 Resource Required: Google Colab (T4) GPU - free
 - **Notebook 7.1: Benchmark Development**
   - Create custom evaluation benchmarks for specific domains
@@ -96,7 +99,8 @@ Resource Required: Google Colab (T4) GPU - free
   - Build lightweight evaluation pipelines for rapid testing
   - Analyze correlation between lite-eval and comprehensive benchmarks
 
-## Week 8: Multimodality, RL, RAG Systems
+## Looking Ahead
+### Week 8: Multimodality, RL, RAG Systems
 - **Notebook 8.1: Multimodal Integration**
   - Implement early and late fusion techniques
   - Build simple vision-language model components

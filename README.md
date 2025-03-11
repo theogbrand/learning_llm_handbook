@@ -25,10 +25,9 @@ Resource Required: Google Colab (T4) GPU - free
 - **Notebook 2.2: Simple Transformer Implementation**
   - Build a mini transformer model in PyTorch
   - Train the model on a small text dataset
-- **Notebook 2.3: Karpathy's Makemore Tutorial**
   - Implement n-gram character-level language modeling
   - Trace backpropagation steps manually and verify against PyTorch autograd
-- **Notebook 2.4: Micrograd Implementation**
+- **Notebook 2.3: Backpropagation Implementation**
   - Build a tiny autograd engine
   - Implement and train a simple neural network using micrograd
 
@@ -51,7 +50,7 @@ Resource Required: 8xA100 GPU to train on FineWeb (Karpathy example)
   - Build data preprocessing pipelines for text datasets (OCR - give already OCR-ed data)
   - Implement efficient data loading with PyTorch DataLoader
   - Create data cleaning and normalization functions (Down/Upsampling, REGEX)
-- **Notebook 4.3: Training Infrastructure**
+- **Notebook 4.2: Training Infrastructure**
   - Experiment with FineWeb dataset samples (Karpathy)
   - Set up distributed training environments
   - Implement mixed precision training
@@ -101,13 +100,14 @@ Resource Required: Google Colab (T4) GPU - free
 
 ## The future of Language Models
 ### Week 8: Multimodality, RL, RAG Systems
+Resource Required: API keys for Pipecat (TBD)
 - **Notebook 8.1: Multimodal Integration**
-  - Implement early and late fusion techniques
-  - Build simple vision-language model components
-  - Integrate audio processing for multimodal inputs
-- **Notebook 8.2: RLHF Fundamentals**
+  - Introduction to early and late fusion techniques
+  - Build simple vision-language model components (PaliGemma walkthrough)
+  - Pipecat pipeline example
+- **Notebook 8.2: Introduction to RL**
   - Create reward modeling components
-  - Implement simplified PPO for LLM fine-tuning
+  - Implement S1 (R1) loop
 - **Notebook 8.3: RAG System Development**
   - Build retrieval-augmented generation pipelines
   - Implement vector stores and efficient retrieval mechanisms

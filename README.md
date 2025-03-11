@@ -1,4 +1,10 @@
- Weekly Course Objectives (Jupyter Notebook Exercises)
+# Weekly Course Objectives and accompanying Jupyter Notebook Exercises
+
+## Prerequisites
+
+This course is designed for professionals with a some background in data science basics, experience building data pipelines,
+and familiarity with analytics and visualization. You should have worked with basic machine learning models, understand text processing fundamentals and know of distributed computing frameworks like Spark. We expect you're already using
+version control and have collaborated on software projects. Some exposure to university-level mathematical concepts (e.g. differential equations, statistics, linear algebra) will help you grasp the concepts behind training and deploying language models at scale.
 
 ## Introduction: Understanding Language Models
 ### Week 1: LLM Fundamentals and Development Environment Setup

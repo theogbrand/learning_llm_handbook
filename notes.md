@@ -5,12 +5,10 @@
 
 ## Prerequisites
 
-### Data Science Fundamentals
-* Exploratory Data Analysis (EDA)
-* K-means clustering (L1, L2 Norm)
-* Optical Character Recognition for scanning PDFs, text files
-* Using Regular Expressions (REGEX) for processing raw outputs from OCR/web scraped data
-* Basic classification, clustering and dimentionality reduction techniques
+This course is designed for professionals with a solid background in data science basics, experience building data pipelines,
+and familiarity with analytics and visualization. You should be comfortable with distributed computing frameworks like Spark,
+have worked with basic machine learning models, and understand text processing fundamentals. We expect you're already using
+version control and have collaborated on software projects. Some exposure to university-level mathematical concepts (e.g. differential equations, statistics, linear algebra) will help you grasp the concepts behind training and deploying language models at scale.
 
 
 ## Course Outline

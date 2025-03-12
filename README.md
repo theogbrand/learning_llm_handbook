@@ -8,7 +8,7 @@ version control and have collaborated on software projects. Some exposure to uni
 
 ## Introduction: Understanding Language Models
 ### Week 1: LLM Fundamentals and Development Environment Setup
-Resource Required: Google Colab (T4) GPU - free
+Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
 - **Notebook 1.1: LLM Tools and Libraries**
   - Import SEA-LION using Hugging Face, implement different decoding strategies
   - Run inference on Colab T4 GPU and compare with local Ollama deployment
@@ -66,7 +66,7 @@ Resource Required: 8xA100 GPU to train on FineWeb (Karpathy example)
   - Build causal language modeling training loop
 
 ### Week 5: Fine-tuning and Adaptation Methods
-Resource Required: Google Colab (T4) GPU - free
+Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
 - **Notebook 5.1: Full Fine-tuning**
   - Implement full fine-tuning on domain-specific datasets
   - Compare performance before and after fine-tuning
@@ -80,7 +80,7 @@ Resource Required: Google Colab (T4) GPU - free
 
 ## Evaluating Language Models
 ### Week 6: Inference Optimization and Deployment
-Resource Required: Google Colab (T4) GPU - free
+Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
 - **Notebook 6.1: Inference Engines**
   - Benchmark vLLM against standard HF/PyTorch inference 
   - Implement various inference optimizations
@@ -92,7 +92,7 @@ Resource Required: Google Colab (T4) GPU - free
   - Benchmark different GPU configurations and batch sizes
 
 ### Week 7: Evaluation
-Resource Required: Google Colab (T4) GPU - free
+Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
 - **Notebook 7.1: Benchmark Development**
   - Create custom evaluation benchmarks for specific domains
   - Implement automated evaluation for math and coding tasks

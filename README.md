@@ -7,19 +7,18 @@ This course is designed for professionals with 2-4 years of experience as a soft
 ## Introduction: Understanding Language Models
 ### Week 1: LLM Fundamentals and Development Environment Setup
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-- **Notebook 1.1: LLM Tools and Libraries**
-  - Import SEA-LION using Hugging Face, implement different decoding strategies
-  - Run inference on Colab T4 GPU and compare with local Ollama deployment
+- **Notebook 1.1: Background and Introduction**
+  - Introduction to Large Language Models
+  - Overview of transformer architecture
+  - History and evolution of language models
+- **Notebook 1.2: Introducing PyTorch**
   - Explore PyTorch basics for LLM implementation
-- **Notebook 1.2: Tokenizers Implementation**
-  - Compare SentencePiece, TikToken, and BPE on various text samples
-  - Implement a basic BPE tokenizer from scratch (Karpathy Tokenizer video)
-  - Experiment with vocabulary extension techniques
-- **Notebook 1.3: Embeddings Workshop**
-  - Implement contrastive learning with CLIP for image-text pairs
-  - Create and visualize Word2Vec and contextual embeddings
-  - Evaluate embeddings using MTEB benchmark tasks
-  - Compare embedding performance across multiple languages
+  - Tensor operations and autograd functionality
+  - Building neural networks with PyTorch
+- **Notebook 1.3: Tokenisation**
+  - Understanding tokenization in language models
+  - Byte-Pair Encoding (BPE) algorithm implementation
+  - Visualization of tokenization process
 
 ## Training and Fine-Tuning Language Models
 ### Week 2: Transformer Architecture Deep Dive

@@ -18,7 +18,7 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
 - **Notebook 1.3: Tokenisation**
   - Understanding tokenization in language models
   - Byte-Pair Encoding (BPE) algorithm implementation
-  - Visualization of tokenization process
+  - SEA-LION multilingual tokenization example and insights
 
 ## Training and Fine-Tuning Language Models
 ### Week 2: Transformer Architecture Deep Dive

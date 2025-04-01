@@ -90,6 +90,7 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
 - **Notebook 6.3: Production Optimizations**
   - Implement KV-cache management strategies for production
   - Benchmark different GPU configurations and batch sizes
+  - Briefly touch on Flash Attention, triton kernels, etc 
 
 ### Week 7: Evaluation
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
@@ -105,7 +106,7 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
   - Analyze correlation between lite-eval and comprehensive benchmarks
 
 ## The future of Language Models
-### Week 8: Multimodality, RL, RAG Systems
+### Week 8: Multimodality, RL (simple, complex)
 Resource Required: API keys for Pipecat (TBD)
 - **Notebook 8.1: Multimodal Integration**
   - Introduction to early and late fusion techniques
@@ -114,7 +115,3 @@ Resource Required: API keys for Pipecat (TBD)
 - **Notebook 8.2: Introduction to RL**
   - Create reward modeling components
   - Implement S1 (R1) loop
-- **Notebook 8.3: RAG System Development**
-  - Build retrieval-augmented generation pipelines
-  - Implement vector stores and efficient retrieval mechanisms
-  - Evaluate RAG systems against fine-tuned models

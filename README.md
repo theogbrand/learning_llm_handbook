@@ -20,6 +20,9 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
   - Byte-Pair Encoding (BPE) algorithm implementation
   - SEA-LION multilingual tokenization example and insights
 
+  HOML (Jay Alammar)
+  To Extend Later: Word2Vec and basic contrastive learning (HOML ch2); relate to training own Sentence Embedding model (HOML ch9) and also multimodality (HOML ch10), KV-Cache (HOML ch2)
+
 ## Training and Fine-Tuning Language Models
 ### Week 2: Transformer Architecture Deep Dive
 - **Notebook 2.1: Attention Mechanism**

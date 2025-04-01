@@ -56,6 +56,7 @@ Resource Required: 8xA100 GPU to train on FineWeb (Karpathy example)
   - Build data preprocessing pipelines for text datasets (OCR - give already OCR-ed data)
   - Implement efficient data loading with PyTorch DataLoader
   - Create data cleaning and normalization functions (Down/Upsampling, REGEX)
+  - Quality filtering, dedup, PII removal, etc basics
 - **Notebook 4.2: Training Infrastructure**
   - Experiment with FineWeb dataset samples (Karpathy)
   - Set up distributed training environments

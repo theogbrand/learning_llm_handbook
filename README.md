@@ -61,19 +61,21 @@ Resource Required: 8xA100 GPU to train on FineWeb (Karpathy example)
   - Set up distributed training environments
   - Implement mixed precision training
   - Experiment with gradient accumulation and large batch training
-- **Notebook 4.3: Pre-training Methodologies**
-  - Implement masked language modeling objectives
-  - Build causal language modeling training loop
+- **Notebook 4.3: Synthetic Data Generation/Continuation of Continuous Pre-training**
+  - Why? 
+  - Introducing Magpie, Model Distillation, Alpacca/Vicuna
 
 ### Week 5: Fine-tuning and Adaptation Methods
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
 - **Notebook 5.1: Full Fine-tuning**
+  - Why (when to) FineTune (Chip ch7)
   - Implement full fine-tuning on domain-specific datasets
   - Compare performance before and after fine-tuning
 - **Notebook 5.2: Parameter-Efficient Methods**
   - Implement LoRA and QLoRA from scratch
   - Build adapter modules and prompt tuning mechanisms
   - Compare parameter counts and performance across methods
+  - Model merging (Chip ch7)
 - **Notebook 5.3: Domain Adaptation**
   - Create instruction tuning datasets and training loops
   - Implement simplified RLHF pipeline components
@@ -111,6 +113,7 @@ Resource Required: API keys for Pipecat (TBD)
 - **Notebook 8.1: Multimodal Integration**
   - Introduction to early and late fusion techniques
   - Build simple vision-language model components (PaliGemma walkthrough)
+  - Auto-regressive image generation (GPT4o)
   - Pipecat pipeline example
 - **Notebook 8.2: Introduction to RL**
   - Create reward modeling components

@@ -60,6 +60,7 @@ Resource Required: 8xA100 GPU to train on FineWeb (Karpathy example)
 - **Notebook 4.2: Training Infrastructure**
   - Experiment with FineWeb dataset samples (Karpathy)
   - Set up distributed training environments
+  - MFU, FLOPS, TTFT, (Chip Ch9)
   - Implement mixed precision training
   - Experiment with gradient accumulation and large batch training
 - **Notebook 4.3: Synthetic Data Generation/Continuation of Continuous Pre-training**
@@ -68,7 +69,7 @@ Resource Required: 8xA100 GPU to train on FineWeb (Karpathy example)
 
 ### Week 5: Fine-tuning and Adaptation Methods
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-- **Notebook 5.1: Full Fine-tuning**
+- **Notebook 5.1: Full Fine-tuning (SFT)**
   - Why (when to) FineTune (Chip ch7)
   - Implement full fine-tuning on domain-specific datasets
   - Compare performance before and after fine-tuning
@@ -77,7 +78,7 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
   - Build adapter modules and prompt tuning mechanisms
   - Compare parameter counts and performance across methods
   - Model merging (Chip ch7)
-- **Notebook 5.3: Domain Adaptation**
+- **Notebook 5.3: Alignment (RLHF, DPO, etc)**
   - Create instruction tuning datasets and training loops
   - Implement simplified RLHF pipeline components
 

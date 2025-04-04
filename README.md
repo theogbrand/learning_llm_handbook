@@ -20,6 +20,9 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
   - Byte-Pair Encoding (BPE) algorithm implementation
   - SEA-LION multilingual tokenization example and insights
 
+  HOML (Jay Alammar)
+  To Extend Later: Word2Vec and basic contrastive learning (HOML ch2); relate to training own Sentence Embedding model (HOML ch9) and also multimodality (HOML ch10), KV-Cache (HOML ch2)
+
 ## Training and Fine-Tuning Language Models
 ### Week 2: Transformer Architecture Deep Dive
 - **Notebook 2.1: Attention Mechanism**
@@ -53,25 +56,29 @@ Resource Required: 8xA100 GPU to train on FineWeb (Karpathy example)
   - Build data preprocessing pipelines for text datasets (OCR - give already OCR-ed data)
   - Implement efficient data loading with PyTorch DataLoader
   - Create data cleaning and normalization functions (Down/Upsampling, REGEX)
+  - Quality filtering, dedup, PII removal, etc basics
 - **Notebook 4.2: Training Infrastructure**
   - Experiment with FineWeb dataset samples (Karpathy)
   - Set up distributed training environments
+  - MFU, FLOPS, TTFT, (Chip Ch9)
   - Implement mixed precision training
   - Experiment with gradient accumulation and large batch training
-- **Notebook 4.3: Pre-training Methodologies**
-  - Implement masked language modeling objectives
-  - Build causal language modeling training loop
+- **Notebook 4.3: Synthetic Data Generation/Continuation of Continuous Pre-training**
+  - Why? 
+  - Introducing Magpie, Model Distillation, Alpacca/Vicuna
 
 ### Week 5: Fine-tuning and Adaptation Methods
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-- **Notebook 5.1: Full Fine-tuning**
+- **Notebook 5.1: Full Fine-tuning (SFT)**
+  - Why (when to) FineTune (Chip ch7)
   - Implement full fine-tuning on domain-specific datasets
   - Compare performance before and after fine-tuning
 - **Notebook 5.2: Parameter-Efficient Methods**
   - Implement LoRA and QLoRA from scratch
   - Build adapter modules and prompt tuning mechanisms
   - Compare parameter counts and performance across methods
-- **Notebook 5.3: Domain Adaptation**
+  - Model merging (Chip ch7)
+- **Notebook 5.3: Alignment (RLHF, DPO, etc)**
   - Create instruction tuning datasets and training loops
   - Implement simplified RLHF pipeline components
 
@@ -87,6 +94,7 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
 - **Notebook 6.3: Production Optimizations**
   - Implement KV-cache management strategies for production
   - Benchmark different GPU configurations and batch sizes
+  - Briefly touch on Flash Attention, triton kernels, etc 
 
 ### Week 7: Evaluation
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
@@ -102,16 +110,13 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
   - Analyze correlation between lite-eval and comprehensive benchmarks
 
 ## The future of Language Models
-### Week 8: Multimodality, RL, RAG Systems
+### Week 8: Multimodality, RL (simple, complex)
 Resource Required: API keys for Pipecat (TBD)
 - **Notebook 8.1: Multimodal Integration**
   - Introduction to early and late fusion techniques
   - Build simple vision-language model components (PaliGemma walkthrough)
+  - Auto-regressive image generation (GPT4o)
   - Pipecat pipeline example
 - **Notebook 8.2: Introduction to RL**
   - Create reward modeling components
   - Implement S1 (R1) loop
-- **Notebook 8.3: RAG System Development**
-  - Build retrieval-augmented generation pipelines
-  - Implement vector stores and efficient retrieval mechanisms
-  - Evaluate RAG systems against fine-tuned models

@@ -2,3 +2,4 @@ notebooks/Week1_LLM_Fundamentals/mlp-regression-reference.ipynb
 notebooks/Week1_LLM_Fundamentals/vocab.bpe
 notebooks/Week1_LLM_Fundamentals/encoder.json
 __pycache__/
+notebooks/Week3_Advanced_Transformer_Components/llama3-from-scratch.ipynb

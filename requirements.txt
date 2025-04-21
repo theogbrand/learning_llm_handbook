@@ -2,3 +2,5 @@ transformers
 tokenizers
 torch
 tiktoken
+matplotlib
+numpy

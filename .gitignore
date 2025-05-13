@@ -3,3 +3,9 @@ notebooks/Week1_LLM_Fundamentals/vocab.bpe
 notebooks/Week1_LLM_Fundamentals/encoder.json
 __pycache__/
 notebooks/Week3_Advanced_Transformer_Components/llama3-from-scratch.ipynb
+notebooks/Week4_Data_Pipeline_Engineering/cosmopedia
+**/.claude/settings.local.json
+.claude
+notebooks/Week4_Data_Pipeline_Engineering/dedup_output
+notebooks/Week4_Data_Pipeline_Engineering/logs
+notebooks/Week4_Data_Pipeline_Engineering/synthetic_data/

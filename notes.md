@@ -1,5 +1,13 @@
 # Course Structure
 
+Setting Up Jupyter Notebook with SLURM and uv: https://adam-streck.medium.com/creating-persistent-jupyter-notebooks-on-a-cluster-using-vs-code-slurm-and-conda-140b922a97a8
+
+uv venv --python 3.12 --seed
+uv pip install notebook
+uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+uv pip install vllm
+jupyter-notebook --no-browser --ip=0.0.0.0 --port 8888
+
 ## Estimated course duration: 2 months
 * Estimated time commitment: 320 hours. (8 hours per day * 5 days a week * 4 weeks per month * 2 months)
 

@@ -11,3 +11,4 @@ notebooks/Week4_Data_Pipeline_Engineering/logs
 notebooks/Week4_Data_Pipeline_Engineering/synthetic_data/
 notebooks/Week4_Data_Pipeline_Engineering/web_scale_pdf_processing_pipeline
 models/
+lora_adapter/

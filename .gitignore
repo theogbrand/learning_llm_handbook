@@ -16,3 +16,4 @@ wandb/
 llm_recipes/
 llama-3-8b-chat-ecom
 fine-tune-llama-3-2-on-customer-support.ipynb
+ecom_lora_adapter

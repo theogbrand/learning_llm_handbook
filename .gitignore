@@ -12,3 +12,7 @@ notebooks/Week4_Data_Pipeline_Engineering/synthetic_data/
 notebooks/Week4_Data_Pipeline_Engineering/web_scale_pdf_processing_pipeline
 models/
 lora_adapter/
+wandb/
+llm_recipes/
+llama-3-8b-chat-ecom
+fine-tune-llama-3-2-on-customer-support.ipynb

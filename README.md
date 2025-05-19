@@ -93,9 +93,8 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
 - **Notebook 6.2: vLLM Sampling**
   - Benchmark vLLM against standard HF/PyTorch inference
   - Explore PagedAttention and continuous batching optimizations
-  - Implement batch inference for maximizing GPU utilization
+  - Compare and contrast vLLM and Llama.cpp
 - **Notebook 6.3: Quantization**
-  - Apply INT8 and INT4 quantization techniques
   - Convert models to optimized GGUF format for llama.cpp
   - Implement QLoRA for efficient fine-tuning
   - Analyze accuracy-performance tradeoffs

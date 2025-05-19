@@ -52,21 +52,19 @@ Recreate Llama base model from scratch to understand respective components!
   - Visualize memory usage with and without KV-cache
 
 ### Week 4: Data Pipeline Engineering
-Resource Required: 8xA100 GPU to train on FineWeb (Karpathy example)
-- **Notebook 4.1: Data Pipeline Development**
-  - Build data preprocessing pipelines for text datasets (OCR - give already OCR-ed data)
-  - Implement efficient data loading with PyTorch DataLoader
-  - Create data cleaning and normalization functions (Down/Upsampling, REGEX)
-  - Quality filtering, dedup, PII removal, etc basics
-- **Notebook 4.2: Training Infrastructure**
-  - Experiment with FineWeb dataset samples (Karpathy)
-  - Set up distributed training environments
-  - MFU, FLOPS, TTFT, (Chip Ch9)
-  - Implement mixed precision training
-  - Experiment with gradient accumulation and large batch training
-- **Notebook 4.3: Synthetic Data Generation/Continuation of Continuous Pre-training**
-  - Why? 
-  - Introducing Magpie, Model Distillation, Alpacca/Vicuna
+Resource Required: 8xA100 GPU
+- **Notebook 4.1: Synthetic Data Generation**
+  - Design and implement synthetic data generation pipeline for generating high quality pretraining data based
+  - Create template seed prompts with different content styles (textbook, blog, etc.) to ensure diversity and rich coverage in data generation
+  - Analyze and visualize generated data, collect feedback on quality to improve generation pipeline
+- **Notebook 4.2: Data Filtering**
+  - Implement simple data filtering pipeline which involves deduplication, decontamination, and quality scoring
+  - Understand how data filtering fits into the overall data generation pipeline
+  - Measure and analyse quality impact of filtering steps to improve data pipeline
+- **Notebook 4.3: Web-Scale PDF Processing**
+  - Implement an educational example of a real world data pipeline for extracting high quality Indonesian texts from a PDF
+  - Understand the challenges and complexities in building a scalable data pipeline for web scale data extraction
+  - Understand the role of Google Translate and NLLB in multilingual data pipelines
 
 ### Week 5: Fine-tuning and Adaptation Methods
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)

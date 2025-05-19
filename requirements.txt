@@ -1,6 +1,6 @@
 transformers
 tokenizers
-torch
 tiktoken
 matplotlib
 numpy
+bitsandbytes>=0.45.3

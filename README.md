@@ -117,4 +117,7 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
   - Auto-regressive image generation (GPT4o)
 - **Notebook 8.2: Introduction to RL**
   - Create reward modeling components
-  - Implement S1 (R1) loop
+  - Introduce RLHF
+- **Notebook 8.3: Agents**
+  - Build simple agent scaffold
+  - Explore frontier research in agentic models

@@ -23,7 +23,7 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
   HOML (Jay Alammar)
   To Extend Later: Word2Vec and basic contrastive learning (HOML ch2); relate to training own Sentence Embedding model (HOML ch9) and also multimodality (HOML ch10), KV-Cache (HOML ch2)
 
-## Training and Fine-Tuning Language Models
+## Pre-training Language Models
 ### Week 2: Transformer Architecture Deep Dive
 - **Notebook 2.1: Introduce Backpropagation**
   - Build a tiny autograd engine
@@ -38,8 +38,6 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
   - Experiment with encoder-decoder (T5-like) designs on translation tasks (E.g. NLLB)
 
 ### Week 3: Advanced Transformer Components
-Recreate Llama base model from scratch to understand respective components!
-
 - **Notebook 3.1: Attention Mechanism**
   - Code attention mechanism from scratch (Q, K, V matrices)
   - Implement scaled dot-product attention with masking
@@ -66,51 +64,50 @@ Resource Required: 8xA100 GPU
   - Understand the challenges and complexities in building a scalable data pipeline for web scale data extraction
   - Understand the role of Google Translate and NLLB in multilingual data pipelines
 
-### Week 5: Fine-tuning and Adaptation Methods
-Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-Finetune Vicuna from llama3.1 base model to show use case of SFT
-Could explore Eval-driven finetuning (finetuning on a truthful QA dataset improves factual QA or RAG set)
-- **Notebook 5.1: Fine-tuning (SFT) for classification (using spam classification dataset)**
-  - Why (when to) FineTune (Chip ch7)
-  - Implement full fine-tuning on domain-specific datasets
-  - Compare performance before and after fine-tuning
-- **Notebook 5.2: Instruction Finetuning (QLora) in PyTorch**
-  - Implement LoRA from scratch
-  - Build adapter modules and prompt tuning mechanisms
-  - Compare parameter counts and performance across methods
-  - Model merging (Chip ch7)
-- **Notebook 5.3: DPO Preference Finetuning for reward models (LoRA)**
-  - Create instruction tuning datasets and training loops
-  - Implement simplified RLHF pipeline components
-
 ## Evaluating Language Models
-### Week 6: Inference Optimization and Deployment
+### Week 5: Inference Optimization and Deployment
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-- **Notebook 6.1: Sampling Parameters**
+- **Notebook 5.1: Sampling Parameters**
   - Explore different sampling strategies (greedy, temperature, top-k, top-p)
   - Implement beam search and repetition penalty techniques
   - Analyze effects of parameters on generation quality and diversity
-- **Notebook 6.2: vLLM Sampling**
+- **Notebook 5.2: vLLM Sampling**
   - Benchmark vLLM against standard HF/PyTorch inference
   - Explore PagedAttention and continuous batching optimizations
   - Compare and contrast vLLM and Llama.cpp
-- **Notebook 6.3: Quantization**
+- **Notebook 5.3: Quantization**
   - Convert models to optimized GGUF format for llama.cpp
   - Implement QLoRA for efficient fine-tuning
   - Analyze accuracy-performance tradeoffs
 
-### Week 7: Evaluation
+### Week 6: Evaluation
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-- **Notebook 7.1: Benchmark Development**
+- **Notebook 6.1: Benchmark Development**
   - Create custom evaluation benchmarks for specific domains
   - Implement automated evaluation for math and coding tasks
-- **Notebook 7.2: Evaluation Methods**
+- **Notebook 6.2: Evaluation Methods**
   - Compare reference-free vs. reference-based evaluation
   - Implement human-in-the-loop evaluation interfaces
   - Create visualizations for model performance analysis
-- **Notebook 7.3: Lite-Eval Implementation**
+- **Notebook 6.3: Lite-Eval Implementation**
   - Build lightweight evaluation pipelines for rapid testing
   - Analyze correlation between lite-eval and comprehensive benchmarks
+
+## Post-training and Fine-tuning Language Models
+### Week 7: Fine-tuning and Adaptation Methods
+Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
+- **Notebook 7.1: Fine-tuning (SFT) for classification (using spam classification dataset)**
+  - Why (when to) FineTune (Chip ch7)
+  - Implement full fine-tuning on domain-specific datasets
+  - Compare performance before and after fine-tuning
+- **Notebook 7.2: Instruction Finetuning (QLora) in PyTorch**
+  - Implement LoRA from scratch
+  - Build adapter modules and prompt tuning mechanisms
+  - Compare parameter counts and performance across methods
+  - Model merging (Chip ch7)
+- **Notebook 7.3: DPO Preference Finetuning for reward models (LoRA)**
+  - Create instruction tuning datasets and training loops
+  - Implement simplified RLHF pipeline components
 
 ## The future of Language Models
 ### Week 8: Multimodality, RL (simple, complex)

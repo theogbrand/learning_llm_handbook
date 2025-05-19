@@ -20,3 +20,4 @@ ecom_lora_adapter
 ecom_merged_adapter_llama
 llama_ecom.gguf
 llama_ecom_tq2.gguf
+llama.cpp

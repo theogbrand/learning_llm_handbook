@@ -70,32 +70,35 @@ Resource Required: 8xA100 GPU
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
 Finetune Vicuna from llama3.1 base model to show use case of SFT
 Could explore Eval-driven finetuning (finetuning on a truthful QA dataset improves factual QA or RAG set)
-- **Notebook 5.1: Full Fine-tuning (SFT)**
+- **Notebook 5.1: Fine-tuning (SFT) for classification (using spam classification dataset)**
   - Why (when to) FineTune (Chip ch7)
   - Implement full fine-tuning on domain-specific datasets
   - Compare performance before and after fine-tuning
-- **Notebook 5.2: Parameter-Efficient Methods**
-  - Implement LoRA and QLoRA from scratch
+- **Notebook 5.2: Instruction Finetuning (QLora) in PyTorch**
+  - Implement LoRA from scratch
   - Build adapter modules and prompt tuning mechanisms
   - Compare parameter counts and performance across methods
   - Model merging (Chip ch7)
-- **Notebook 5.3: Alignment (RLHF, DPO, etc)**
+- **Notebook 5.3: DPO Preference Finetuning for reward models (LoRA)**
   - Create instruction tuning datasets and training loops
   - Implement simplified RLHF pipeline components
 
 ## Evaluating Language Models
 ### Week 6: Inference Optimization and Deployment
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-- **Notebook 6.1: Inference Engines**
-  - Benchmark vLLM against standard HF/PyTorch inference 
-  - Implement various inference optimizations
-- **Notebook 6.2: Quantization Techniques**
-  - Apply INT8 and INT4 quantization to models (gguf lib?)
-  - Analyse accuracy-performance tradeoffs
-- **Notebook 6.3: Production Optimizations**
-  - Implement KV-cache management strategies for production
-  - Benchmark different GPU configurations and batch sizes
-  - Briefly touch on Flash Attention, triton kernels, etc 
+- **Notebook 6.1: Sampling Parameters**
+  - Explore different sampling strategies (greedy, temperature, top-k, top-p)
+  - Implement beam search and repetition penalty techniques
+  - Analyze effects of parameters on generation quality and diversity
+- **Notebook 6.2: vLLM Sampling**
+  - Benchmark vLLM against standard HF/PyTorch inference
+  - Explore PagedAttention and continuous batching optimizations
+  - Implement batch inference for maximizing GPU utilization
+- **Notebook 6.3: Quantization**
+  - Apply INT8 and INT4 quantization techniques
+  - Convert models to optimized GGUF format for llama.cpp
+  - Implement QLoRA for efficient fine-tuning
+  - Analyze accuracy-performance tradeoffs
 
 ### Week 7: Evaluation
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)

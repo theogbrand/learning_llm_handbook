@@ -110,13 +110,11 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
   - Implement simplified RLHF pipeline components
 
 ## The future of Language Models
-### Week 8: Multimodality, RL (simple, complex)
-Resource Required: API keys for Pipecat (TBD)
+### Week 8: Multimodality, RL
 - **Notebook 8.1: Multimodal Integration**
   - Introduction to early and late fusion techniques
   - Build simple vision-language model components (PaliGemma walkthrough)
   - Auto-regressive image generation (GPT4o)
-  - Pipecat pipeline example
 - **Notebook 8.2: Introduction to RL**
   - Create reward modeling components
   - Implement S1 (R1) loop

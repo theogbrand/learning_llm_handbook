@@ -104,7 +104,6 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
   - Implement LoRA from scratch
   - Build adapter modules and prompt tuning mechanisms
   - Compare parameter counts and performance across methods
-  - Model merging (Chip ch7)
 - **Notebook 7.3: DPO Preference Finetuning for reward models (LoRA)**
   - Create instruction tuning datasets and training loops
   - Implement simplified RLHF pipeline components

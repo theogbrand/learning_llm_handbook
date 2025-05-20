@@ -28,24 +28,24 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
 - **Notebook 2.1: Introduce Backpropagation**
   - Build a tiny autograd engine
   - Explain loss.backward() as seen in lesson 1.2
-- **Notebook 2.2: Simple bigram language model Implementation**
+- **Notebook 2.2: Simple Transformer to understand logits, softmax, sigmoid, logprobs, how LM Head works as final layer before generating next token**
   - Train the model on tiny Shakespeare dataset
   - Demonstrate how a model can "learn", somewhat semantic, way to generate text from a training dataset
   - Consider explaining progression from bigram (n-gram) to RNN to Transformer
-- **Notebook 2.3: Introduce Encoder-only, Decoder-only, Encoder-Decoder Architecture**
+- **Notebook 2.3: Introduce why self-attention, and how it evolved from RNN for sequence modelling**
   - Implement simplified versions of encoder-only (BERT-like) models
   - Compare performance of decoder-only (GPT-like) architectures
   - Experiment with encoder-decoder (T5-like) designs on translation tasks (E.g. NLLB)
 
 ### Week 3: Advanced Transformer Components
-- **Notebook 3.1: Attention Mechanism**
+- **Notebook 3.1: GPT-2 to Llama Architecture**
   - Code attention mechanism from scratch (Q, K, V matrices)
   - Implement scaled dot-product attention with masking
-- **Notebook 3.2: Transformer Block Implementation**
+- **Notebook 3.2: Explain Optimizations**
   - Code multi-head attention from scratch
   - Implement positional embeddings and encodings
   - Build feed-forward networks with different activation functions
-- **Notebook 3.2: KV-Cache Optimization**
+- **Notebook 3.2: Explain Hyperparameters when training**
   - Implement and benchmark KV-cache for efficient inference
   - Visualize memory usage with and without KV-cache
 

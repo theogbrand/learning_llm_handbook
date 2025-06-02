@@ -82,14 +82,14 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
 
 ### Week 6: Evaluation
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-- **Notebook 6.1: Benchmark Development**
+- **Notebook 6.1: Understand Exact Match and LLM Judge**
   - Create custom evaluation benchmarks for specific domains
   - Implement automated evaluation for math and coding tasks
-- **Notebook 6.2: Evaluation Methods**
+- **Notebook 6.2: Generate Synthetic Data for Evaluation**
   - Compare reference-free vs. reference-based evaluation
   - Implement human-in-the-loop evaluation interfaces
   - Create visualizations for model performance analysis
-- **Notebook 6.3: Lite-Eval Implementation**
+- **Notebook 6.3: Agentic Evaluations**
   - Build lightweight evaluation pipelines for rapid testing
   - Analyze correlation between lite-eval and comprehensive benchmarks
 

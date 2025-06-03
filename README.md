@@ -1,5 +1,7 @@
 # Weekly Course Objectives and accompanying Jupyter Notebook Exercises
 
+> **Note on Course Content**: The exercises in this course feature canonical examples commonly used in language modeling education, such as implementing GPT from scratch, building micrograd, and character-level text generation. These foundational examples have become industry standards because they provide the clearest path to understanding core concepts. Working through these proven exercises ensures you're building on the same foundations that have trained today's leading AI researchers and engineers.
+
 ## Prerequisites
 
 This course is designed for professionals with 2-4 years of experience as a software engineer, data scientist, machine learning engineer, or similar. You should have some background in data science basics, experience building data pipelines, and familiarity with analytics and visualization. You should have worked with basic machine learning models, understand text processing fundamentals and know of distributed computing frameworks like Spark. We expect you're already using version control and have collaborated on software projects. Some exposure to university-level mathematical concepts (e.g. differential equations, statistics, linear algebra) will help you grasp the concepts behind training and deploying language models at scale more quickly.

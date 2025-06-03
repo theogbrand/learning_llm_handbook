@@ -8,115 +8,147 @@ This course is designed for professionals with 2-4 years of experience as a soft
 ### Week 1: LLM Fundamentals and Development Environment Setup
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
 - **Notebook 1.1: Background and Introduction**
-  - Introduction to Large Language Models
-  - Overview of transformer architecture
-  - History and evolution of language models
+  - Set up a LLM development environment with GPU acceleration
+  - Compare base models vs instruction-tuned models through hands-on experiments
+  - Generate text completions and analyze model outputs for different use cases
 - **Notebook 1.2: Introducing PyTorch**
-  - Explore PyTorch basics for LLM implementation
-  - Tensor operations and autograd functionality
-  - Building neural networks with PyTorch
-- **Notebook 1.3: Tokenisation**
-  - Understanding tokenization in language models
-  - Byte-Pair Encoding (BPE) algorithm implementation
-  - SEA-LION multilingual tokenization example and insights
-
-  HOML (Jay Alammar)
-  To Extend Later: Word2Vec and basic contrastive learning (HOML ch2); relate to training own Sentence Embedding model (HOML ch9) and also multimodality (HOML ch10), KV-Cache (HOML ch2)
+  - Build neural networks from scratch using PyTorch's tensor operations
+  - Train a complete image classifier on FashionMNIST dataset with 90%+ accuracy
+  - Implement custom training loops with optimizers, loss functions, and DataLoaders
+  - Apply transfer learning to adapt pre-trained models for new tasks
+- **Notebook 1.3: Tokenization**
+  - Implement Byte-Pair Encoding (BPE) tokenizer from scratch in pure Python
+  - Handle UTF-8 encoding and Unicode text processing for multilingual applications
+  - Analyze tokenization efficiency across languages using fertility rate metrics
+  - Compare and choose between tokenization libraries (tiktoken, SentencePiece) for production use
 
 ## Pre-training Language Models
 ### Week 2: Transformer Architecture Deep Dive
-- **Notebook 2.1: Introduce Backpropagation**
-  - Build a tiny autograd engine
-  - Explain loss.backward() as seen in lesson 1.2
-- **Notebook 2.2: Simple Transformer to understand logits, softmax, sigmoid, logprobs, how LM Head works as final layer before generating next token**
-  - Train the model on tiny Shakespeare dataset
-  - Demonstrate how a model can "learn", somewhat semantic, way to generate text from a training dataset
-  - Consider explaining progression from bigram (n-gram) to RNN to Transformer
-- **Notebook 2.3: Introduce why self-attention, and how it evolved from RNN for sequence modelling**
-  - Implement simplified versions of encoder-only (BERT-like) models
-  - Compare performance of decoder-only (GPT-like) architectures
-  - Experiment with encoder-decoder (T5-like) designs on translation tasks (E.g. NLLB)
+- **Notebook 2.1: Backpropagation**
+  - Build a minimal autograd engine (micrograd) to understand how PyTorch works internally
+  - Implement computational graphs and automatic gradient calculation from scratch
+  - Verify gradients manually using calculus and the chain rule
+  - Train neural networks using your own automatic differentiation system
+- **Notebook 2.2: Multilayer Perceptrons (MLPs)**
+  - Create a character-level language model that generates Shakespeare-like text
+  - Implement neural probabilistic language models following Bengio et al. (2003)
+  - Train word embeddings and visualize learned semantic relationships
+  - Generate coherent text using only MLPs (without attention)
+- **Notebook 2.3: Attention Introduction**
+  - Implement self-attention mechanism from first principles in NumPy and PyTorch
+  - Build the Query, Key, Value computation pipeline for attention
+  - Design multi-head attention layers with proper masking and scaling
+  - Construct a complete mini-GPT model and generate text with transformers
 
 ### Week 3: Advanced Transformer Components
-- **Notebook 3.1: GPT-2 to Llama Architecture**
-  - Code attention mechanism from scratch (Q, K, V matrices)
-  - Implement scaled dot-product attention with masking
-**Notebook 3.2: Explain Optimizations**
-   - Code multi-head attention from scratch
-   - Implement positional embeddings and encodings
-   - Build feed-forward networks with different activation functions
-**Notebook 3.3: Explain Hyperparameters when training**
-   - Implement and benchmark KV-cache for efficient inference
-   - Visualize memory usage with and without KV-cache
+- **Notebook 3.1: GPT Architecture**
+  - Build a complete GPT-2 model from scratch in PyTorch
+  - Implement causal attention masks for autoregressive generation
+  - Generate coherent text using temperature and top-k sampling strategies
+  - Debug and visualize attention patterns in decoder-only architectures
+- **Notebook 3.2: Model Training Optimizations**
+  - Accelerate training by 3-5x using mixed precision and tensor cores
+  - Implement Flash Attention to reduce memory usage by 10-20x
+  - Profile and optimize PyTorch code with torch.compile
+  - Diagnose and fix common GPU memory bottlenecks
+- **Notebook 3.3: Model Training Hyperparameters**
+  - Configure AdamW optimizer with gradient clipping for stable training
+  - Design learning rate schedules that improve convergence speed
+  - Scale training across multiple GPUs using Distributed Data Parallel
+  - Evaluate your model's reasoning capabilities using HellaSwag benchmark
+- **Notebook 3.4: From GPT-2 to LLaMA3**
+  - Upgrade models with RMSNorm for 2x faster training
+  - Implement Rotary Position Embeddings (RoPE) for better length generalization
+  - Reduce memory usage by 3x with Group Query Attention (GQA)
+  - Boost model performance using SwiGLU activation functions
 
 ### Week 4: Data Pipeline Engineering
-Resource Required: 8xA100 GPU
+Resource Required: Google Colab (T4) GPU or better
 - **Notebook 4.1: Synthetic Data Generation**
-  - Design and implement synthetic data generation pipeline for generating high quality pretraining data based
-  - Create template seed prompts with different content styles (textbook, blog, etc.) to ensure diversity and rich coverage in data generation
-  - Analyze and visualize generated data, collect feedback on quality to improve generation pipeline
+  - Generate high-quality educational content using the Cosmopedia methodology
+  - Design and execute topic clustering pipelines for diverse training data
+  - Create content in multiple styles (textbook, blog, wikihow) for varied learning
+  - Deploy and orchestrate local LLMs with Ollama for scalable generation
 - **Notebook 4.2: Data Filtering**
-  - Implement simple data filtering pipeline which involves deduplication, decontamination, and quality scoring
-  - Understand how data filtering fits into the overall data generation pipeline
-  - Measure and analyse quality impact of filtering steps to improve data pipeline
-- **Notebook 4.3: Web-Scale PDF Processing**
-  - Implement an educational example of a real world data pipeline for extracting high quality Indonesian texts from a PDF
-  - Understand the challenges and complexities in building a scalable data pipeline for web scale data extraction
-  - Understand the role of Google Translate and NLLB in multilingual data pipelines
+  - Build MinHash deduplication pipelines to remove redundant data at scale
+  - Implement decontamination checks to prevent benchmark leakage
+  - Train and deploy BERT classifiers to score educational content quality
+  - Design multi-stage filtering pipelines that balance quality and quantity
+- **Notebook 4.3: Real-World Data Extraction**
+  - Extract clean text from complex PDFs using Marker at production scale
+  - Build OCR pipelines that handle scanned documents and images
+  - Create multilingual processing pipelines with Google Translate and NLLB
+  - Optimize data extraction workflows for web-scale document processing
 
 ## Evaluating Language Models
 ### Week 5: Inference Optimization and Deployment
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-- **Notebook 5.1: Sampling Parameters**
-  - Explore different sampling strategies (greedy, temperature, top-k, top-p)
-  - Implement beam search and repetition penalty techniques
-  - Analyze effects of parameters on generation quality and diversity
-- **Notebook 5.2: vLLM Sampling**
-  - Benchmark vLLM against standard HF/PyTorch inference
-  - Explore PagedAttention and continuous batching optimizations
-  - Compare and contrast vLLM and Llama.cpp
+- **Notebook 5.1: Sampling Techniques**
+  - Build custom sampling functions to control LLM output quality and diversity
+  - Implement temperature, top-k, and top-p sampling from scratch to understand generation mechanics
+  - Design beam search algorithms for finding optimal text sequences
+  - Create interactive visualizations to debug and optimize probability distributions
+- **Notebook 5.2: Model Inference Serving**
+  - Deploy production-ready LLM services with 10x throughput improvements
+  - Configure PagedAttention to serve multiple users with minimal GPU memory
+  - Optimize inference pipelines using continuous batching and Flash Attention
+  - Build and deploy OpenAI-compatible APIs for seamless integration
 - **Notebook 5.3: Quantization**
-  - Convert models to optimized GGUF format for llama.cpp
-  - Implement QLoRA for efficient fine-tuning
-  - Analyze accuracy-performance tradeoffs
+  - Reduce model size by 75% while maintaining 95%+ of original performance
+  - Implement quantization algorithms (absmax, zero-point) to understand precision tradeoffs
+  - Deploy models on edge devices using GGUF format and llama.cpp
+  - Fine-tune quantized models with QLoRA for memory-efficient adaptation
 
 ### Week 6: Evaluation
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-- **Notebook 6.1: Understand Exact Match and LLM Judge**
-  - Create custom evaluation benchmarks for specific domains
-  - Implement automated evaluation for math and coding tasks
-- **Notebook 6.2: Generate Synthetic Data for Evaluation**
-  - Compare reference-free vs. reference-based evaluation
-  - Implement human-in-the-loop evaluation interfaces
-  - Create visualizations for model performance analysis
-- **Notebook 6.3: Agentic Evaluations**
-  - Build lightweight evaluation pipelines for rapid testing
-  - Analyze correlation between lite-eval and comprehensive benchmarks
+- **Notebook 6.1: Introduction to Model Evaluation**
+  - Design comprehensive evaluation frameworks for both MCQA and generative tasks
+  - Introduce common evaluation methodologies such as loglikelihood_acc_norm and quasi_exact_match
+  - Build automated testing pipelines using the lighteval framework
+  - Prompt engineering to maximize model performance on benchmarks
+- **Notebook 6.2: Synthetic Evaluation Dataset Generation**
+  - Generate custom evaluation datasets tailored to your specific domain using GPT-4.1-mini
+  - Implement rubric-based scoring systems for automated quality assessment
+  - Detect and mitigate biases in synthetic datasets through statistical analysis
+  - Build robust data pipelines with Pydantic for structured output validation
+- **Notebook 6.3: LLM as Judge**
+  - Implement automated model comparison systems using AlpacaEval methodology
+  - Diagnose and correct length bias in LLM evaluations using statistical techniques
+  - Build position-invariant evaluation protocols to ensure fair comparisons
+  - Extract and analyze logprobs to create length-controlled evaluation metrics
 
 ## Post-training and Fine-tuning Language Models
 ### Week 7: Fine-tuning and Adaptation Methods
 Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommended)
-- **Notebook 7.1: Fine-tuning (SFT) for classification (using spam classification dataset)**
-  - Why (when to) FineTune (Chip ch7)
-  - Implement full fine-tuning on domain-specific datasets
-  - Compare performance before and after fine-tuning
-- **Notebook 7.2: Instruction Finetuning (QLora) in PyTorch**
-  - Implement LoRA from scratch
-  - Build adapter modules and prompt tuning mechanisms
-  - Compare parameter counts and performance across methods
-- **Notebook 7.3: DPO Preference Finetuning for reward models (LoRA)**
-  - Create instruction tuning datasets and training loops
-  - Implement simplified RLHF pipeline components
+- **Notebook 7.1: Build a Custom Text Classifier from LLMs**
+  - Transform any pre-trained LLM into a high-accuracy spam detector
+  - Implement strategic layer freezing to preserve knowledge while adapting
+  - Design and attach custom classification heads to language models
+  - Analyze model performance using confusion matrices and F1 scores
+- **Notebook 7.2: Create Instruction-Following AI Assistants**
+  - Convert raw language models into helpful chat assistants using the Alpaca dataset
+  - Design effective prompt templates that shape model behavior
+  - Implement production-ready training with gradient accumulation and mixed precision
+  - Evaluate and improve response quality through systematic testing
+- **Notebook 7.3: Optimize Models with LoRA and Preference Learning**
+  - Deploy parameter-efficient fine-tuning that reduces memory by 90%
+  - Execute two-stage training pipelines combining SFT and DPO
+  - Implement Direct Preference Optimization to align models with human preferences
+  - Merge and compare multiple model versions for optimal performance
 
-## The future of Language Models
-### Week 8: Multimodality, RL
-- **Notebook 8.1: Multimodal Integration**
-  - Introduction to early and late fusion techniques
-  - Build simple vision-language model components (PaliGemma walkthrough)
-  - Auto-regressive image generation (GPT4o)
-- **Notebook 8.2: Introduction to RL**
-  - Create reward modeling components
-  - Introduce RLHF
-- **Notebook 8.3: Agents**
-  - Build simple agent scaffold
-  - Explore frontier research in agentic models
+## The Future of Language Models
+### Week 8: Multimodality, Reinforcement Learning, and Agents
+- **Notebook 8.1: Build Vision-Language Models from Scratch**
+  - Implement a complete Vision Transformer (ViT) for image understanding
+  - Build contrastive learning systems evolving from CLIP to SigLIP
+  - Engineer multimodal fusion layers using cross-attention mechanisms
+  - Construct a PaliGemma-style model that processes images and text together
+- **Notebook 8.2: Design Autonomous AI Agents**
+  - Architect an example agent system built with LLMs and tools
+  - Build functional agents that can calculate math and navigate Wikipedia
+  - Implement the ReAct pattern to enable reasoning before acting
+  - Design memory systems that allow agents to learn from experience
+- **Notebook 8.3: Apply Reinforcement Learning to Language Models**
+  - Implement reward modeling for language generation tasks
+  - Build intuition for RLHF and PPO through hands-on experiments
+  - Introduce GRPO (Group Relative Policy Optimization) for efficient training

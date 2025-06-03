@@ -41,13 +41,13 @@ Resource Required: Google Colab (T4) GPU or better (RunPod 1x A10G/L40s recommen
 - **Notebook 3.1: GPT-2 to Llama Architecture**
   - Code attention mechanism from scratch (Q, K, V matrices)
   - Implement scaled dot-product attention with masking
-- **Notebook 3.2: Explain Optimizations**
-  - Code multi-head attention from scratch
-  - Implement positional embeddings and encodings
-  - Build feed-forward networks with different activation functions
-- **Notebook 3.2: Explain Hyperparameters when training**
-  - Implement and benchmark KV-cache for efficient inference
-  - Visualize memory usage with and without KV-cache
+**Notebook 3.2: Explain Optimizations**
+   - Code multi-head attention from scratch
+   - Implement positional embeddings and encodings
+   - Build feed-forward networks with different activation functions
+**Notebook 3.3: Explain Hyperparameters when training**
+   - Implement and benchmark KV-cache for efficient inference
+   - Visualize memory usage with and without KV-cache
 
 ### Week 4: Data Pipeline Engineering
 Resource Required: 8xA100 GPU

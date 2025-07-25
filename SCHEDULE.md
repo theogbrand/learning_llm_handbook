@@ -1,7 +1,7 @@
 # Course Schedule
 
 ## Overview
-This intensive 8-week course covers Large Language Models from fundamentals to advanced applications. Each week focuses on specific topics with hands-on practical work.
+The 8-week course covers Large Language Models from fundamentals to advanced applications. Each week focuses on specific topics with hands-on practical work.
 
 ## Daily Schedule
 Assuming an average 8 hour work day, the schedule is as follows:

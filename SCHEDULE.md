@@ -12,6 +12,8 @@ Assuming an average 8 hour work day, the schedule is as follows:
 
 ### Recommended Daily Pace:
 
+* Each notebook varies in length of content and difficulty. It is recommended for students to spend more time on notebooks that cover more complex topics and require more time to grasp the core intuitions.
+
 | Day       | Morning (9:00-12:00)                     | Afternoon (13:00-18:00)  |
 |-----------|-------------------------------------------|--------------------------|
 | Monday    | Start on 1st notebook                     | Continue on 1st notebook |

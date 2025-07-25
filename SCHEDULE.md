@@ -28,11 +28,6 @@ Assuming an average 8 hour work day, the schedule is as follows:
 
 *Every week, consultations will be optional but recommended.*
 
-## Prerequisites
-- Basic Python programming
-- Understanding of some machine learning concepts
-- Familiarity with linear algebra and calculus
-
 ## Learning Objectives
 By the end of this course, students will:
 - Grasp fundamental intuitions about transformer architecture and attention mechanisms
@@ -42,8 +37,3 @@ By the end of this course, students will:
 - Understand the basics of multimodal AI systems, such as Vision-Language models
 - Learn how to build a simple LLM Agent with tools and prompt engineering
 - Familiarize with the basics of reinforcement learning with human feedback
-
-## Resources
-- All notebooks and code examples provided
-- Additional reading materials for each topic
-- Office hours and consultation sessions
